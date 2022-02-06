@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url(//db.onlinewebfonts.com/c/fd1ad3a0f95210975d2f5607501020b5?family=Norse);
+
+:root {
+    --margin: 30px;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+    width: 600px;
+    
+    
+}
+
+
+
+
+main > p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: justify;
+}
+
+form {
+   
+    background-color: rgb(245, 245, 245);
+    padding: var(--margin);
+    margin-bottom: 30px;
+    box-shadow: 0 -1px 2px rgb(243, 243, 243),
+                0 2px 2px rgb(211, 211, 211);
+    
+}
+
+
+
+
+.reg {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 50px;
+    border: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0 ;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    
+    
+}
+
+input {
+    margin-bottom: 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+input:focus { 
+    border: 2px solid #558eff; 
+}
+
+input:required:focus {
+    border: 2px solid #ff55a4;
+}
+input:placeholder-shown {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+label {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: var(--margin)
+}
+
+button {
+    margin-left: var(--margin);
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #596D48;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
+
+.login {
+    font-size: 1rem;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+
+.login-link {
+    color: #596D48;
+}
+
+
+
+aside {
+    margin: 0;
+    width: 400px;
+    background-image: url('images/halie-west-plant.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.author-info, .about {
+    color: #ffffff;
+}
+
+.author-info {
+    text-decoration: underline;
+}
+
+.about {
+    margin-top: auto;
+    margin-bottom: 15px;
+
+}
+
+.logo-stripe {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.logo {
+    height: 90px;
+}
+
+.odin {
+    color: #ffffff;
+    font-family: 'Norse', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.5rem;
+    font-weight: 600; 
+}
+
+@media screen and (max-device-width: 376px)
+{
+    body {
+        width: 375px;
+        max-height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    aside {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        align-items: center;
+    }
+    form {
+        width: 320px;
+        text-align: center;
+    }
+    .reg {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+    button {
+        margin: 0;
+    }
+    input {
+        height: 40px;
+        width: 250px;
+    }
+
+}
