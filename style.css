@@ -50,9 +50,8 @@ form {
 
 .reg {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: flex-start;
-    gap: 50px;
     border: none;
     margin-inline-start: 0;
     margin-inline-end: 0;
@@ -87,19 +86,24 @@ input:placeholder-shown {
     font-family: 'Rubik', sans-serif;
 }
 
-
+h1 {
+    margin-bottom: 40px;
+}
 
 label {
     font-size: 0.9rem;
     font-weight: 300;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 
-.column {
+.row {
     display: flex;
-    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 10px;
 }
-
+.input {
+    width: 200px;
+}
 p {
     margin: var(--margin)
 }
@@ -183,7 +187,8 @@ aside {
 {
     body {
         width: 375px;
-        max-height: 100vh;
+        height: 90%;
+        margin: 0 0;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -196,22 +201,31 @@ aside {
         align-items: center;
     }
     form {
-        width: 320px;
-        text-align: center;
-    }
-    .reg {
+        width: 300px;
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+    }
+    .reg {
+        justify-content: flex-start;
+        align-items: center;
         width: 100%;
+        margin: 0;
+        
+    }
+    .row {
+        flex-direction: column;
+        
+        justify-content: flex-start;
         gap: 0;
     }
     button {
-        margin: 0;
+        margin-left: 0;
     }
     input {
-        height: 40px;
-        width: 250px;
+        height: 30px;
+        width: 220px;
     }
 
 }

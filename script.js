@@ -28,7 +28,7 @@ createAccount.addEventListener('click', () => { validatePassword()})
 
 
 function setCursorPosition(pos, e) {
-    e.focus();
+    
     if (e.setSelectionRange) e.setSelectionRange(pos, pos);
     else if (e.createTextRange) {
       let range = e.createTextRange();
@@ -60,6 +60,6 @@ function setCursorPosition(pos, e) {
   document.addEventListener("DOMContentLoaded", function() {
     let input = document.querySelector("#phone");
     input.addEventListener("input", mask, false);
-    input.focus();
+    
     setCursorPosition(3, input);
   })
