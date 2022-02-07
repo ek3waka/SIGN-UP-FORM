@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url(//db.onlinewebfonts.com/c/fd1ad3a0f95210975d2f5607501020b5?family=Norse);
+@import url('https://db.onlinewebfonts.com/c/fd1ad3a0f95210975d2f5607501020b5?family=Norse');
 
 body {
     margin: 0; 
@@ -21,7 +21,7 @@ aside {
     width: 100%;
     
     background-image: url('images/halie-west-plant.jpg');
-    background-size: cover; 
+    background-size:cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@ a, a:visited {
         align-items: stretch;
     }
     aside {
-        width: 50%;
+        width: 400px;
     }
 }
 
@@ -199,6 +199,9 @@ a, a:visited {
     .container {
         flex-direction: row;
         
+    }
+    aside {
+        width: 400px;
     }
     main {
         align-items: flex-start;
